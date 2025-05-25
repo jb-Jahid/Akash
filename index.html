@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md Akash Miah - Creative Student & Graphic Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.07);
+      max-width: 900px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .profile-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .profile-image img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+      object-fit: cover;
+      filter: drop-shadow(0 0 8px #0ff);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .black-photo {
+      width: 80px;
+      height: 80px;
+      background-color: #000;
+      border-radius: 12px;
+      box-shadow: 0 0 8px #0ff inset;
+    }
+
+    .info-section {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 2.8rem;
+      letter-spacing: 1.5px;
+      text-shadow: 0 0 12px #00ffffbb;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #00ffffbb;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 1.05rem;
+      color: #ddd;
+    }
+
+    a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #7fffd4;
+      text-decoration: underline;
+    }
+
+    .contact p {
+      margin-bottom: 8px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 20px;
+      margin-top: 12px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      .profile-card {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 30px;
+      }
+
+      .profile-image {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .profile-image img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .black-photo {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <article class="profile-card" role="main" aria-label="Md Akash Miah Student Profile">
+    <aside class="profile-image" aria-label="Profile and gallery photos">
+      <img src="WhatsApp Image 2025-05-25 at 11.44.05.jpeg" alt="Md Akash Miah Profile Photo" />
+      <div class="gallery" aria-label="Gallery photos">
+    <img src="WhatsApp_Image_2025-05-25_at_11.44.06.jpeg" alt="Gallery photo 1" class="black-photo" />
+    <img src="WhatsApp_Image_2025-05-25_at_11.44.06_1.jpeg" alt="Gallery photo 2" class="black-photo" />
+    <img src="WhatsApp_Image_2025-05-25_at_11.44.06_2.jpeg" alt="Gallery photo 3" class="black-photo" />
+  </div>
+    </aside>
+
+    <section class="info-section">
+      <header>
+        <h1>Md Akash Miah</h1>
+        <p style="font-style: italic; color: #0ff;">Student | Graphic Designer | Dream Chaser</p>
+      </header>
+
+      <section aria-label="Basic Information">
+        <h2>Basic Information</h2>
+        <p><strong>Full Name:</strong> Md Akash Miah</p>
+        <p><strong>Date of Birth:</strong> 15 July 2002</p>
+        <p><strong>Age:</strong> 22</p>
+        <p><strong>Nationality:</strong> Bangladeshi</p>
+        <p><strong>Location:</strong> Bangladesh</p>
+      </section>
+
+      <section aria-label="About Me">
+        <h2>About Me</h2>
+        <p>Md Akash Miah is a passionate student from Bangladesh with a strong interest in design, creativity, and personal growth. Known for his honesty, discipline, and ambition, Akash is committed to achieving excellence in both academics and his hobbies. His goal is to work internationally and bring his unique skills to the digital creative world.</p>
+      </section>
+
+      <section aria-label="Hobby Graphic Design">
+        <h2>Hobby: Graphic Design</h2>
+        <p>Graphic design is Akash’s creative outlet and passion. He enjoys crafting logos, posters, and digital art that communicate powerful messages. His love for design allows him to express his ideas visually and inspire others. Akash aims to turn this hobby into a successful career by freelancing or joining a creative agency.</p>
+      </section>
+
+      <section aria-label="Contact Information" class="contact">
+        <h2>Contact & Social Media</h2>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/8801883607401" target="_blank" rel="noopener">+8801883607401</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/Akash035" target="_blank" rel="noopener">facebook.com/Akash035</a></p>
+      </section>
+
+      <section aria-label="Future Goals">
+        <h2>Future Goals</h2>
+        <p>Akash envisions traveling the world, learning from diverse cultures, and growing professionally. He dreams of working at a prestigious international company, building his own design brand, and inspiring young people in Bangladesh to pursue their dreams with passion and perseverance.</p>
+      </section>
+    </section>
+  </article>
+
+
+
+</body>
+</html>
